@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 *{
-    border: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -16,4 +15,253 @@
 --gravishblue: hsl(233, 8%, 79%);
 --darkgravishblue: hsl(236, 13%, 42%);
 --darkblue: hsl(240, 100%, 5%);
+}
+@media (min-width:375px) and (max-width:1440px) {
+    body{
+        margin: 2rem 1.5rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header > .picheader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bgdsk{
+        display: none;
+    }
+    .menutext{
+        display: none;
+    }
+    .logo, .menu{
+        display: block;
+        width: 3rem;
+        margin-bottom: 2rem;
+    }
+    .imgmob{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .maininfo{
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+    }
+    h1{
+        font-weight: 800;
+        max-width: 80%;
+        color: var(--darkblue);
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+    .secondinfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .infotext{
+        font-size: 0.9rem;
+        color: var(--darkgravishblue);
+        line-height: 1.5rem;
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+    .readmore{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: var(--softred);
+        padding: 0.8rem 2rem;
+        width: 10rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 2rem;
+    }
+    .bgnew{
+        background-color: var(--darkblue);
+        max-width: 350px;
+        margin-bottom: 4rem;
+    }
+    hr{
+        max-width: 300px;
+    }
+    .infonew{
+        margin: 1.5rem 1rem;
+    }
+    .infonew h2{
+        color: var(--softorange);
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    .infonew h3{
+        color:var(--white);
+        font-size: 1.2rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+    .infonew p{
+        color: var(--darkgravishblue);
+        margin-bottom: 1rem;
+        font-size: 0.94rem;
+        max-width: 290px;
+    }
+    .subinfo img{
+        max-width: 100px;
+        margin-right: 1.3rem;
+    }
+    .pic{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    .subinfo h2{
+        color: var(--gravishblue);
+    }
+    .subinfo h3, h2{
+        margin-bottom: 0.7rem;
+    }
+    .subinfo p{
+        color: var(--gravishblue);
+        font-size: 0.9rem;
+        max-width: 200px;
+
+    }
+}
+
+
+
+
+
+/* ---------- DESKTOP ------------- */
+
+
+
+
+
+@media (min-width:1440px) {
+    body{
+        margin: 5rem 5rem;
+        min-height: 100vh;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .menutext a{
+        text-decoration: none;
+        color: var(--darkgravishblue);
+        font-size: 1.3rem;
+        margin-right: 0.9rem;
+    }
+    .imgmob{
+        margin-right: 1.5rem;
+        max-width: 70rem;
+        margin-bottom: 1rem;
+    }
+    .align{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .bgdsk{
+        background-color: var(--darkblue);
+        width: 450px;
+        height: 700px;
+        padding: 0.5rem;
+    }
+    hr{
+        width: 350px;
+    }
+    .infonewdsk{
+        margin: 1.5rem 1rem;
+    }
+    .infonewdsk h2{
+        color: var(--softorange);
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    .infonewdsk h3{
+        color:var(--white);
+        font-size: 1.2rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+    .infonewdsk p{
+        color: var(--darkgravishblue);
+        margin-bottom: 1rem;
+        font-size: 0.94rem;
+        max-width: 290px;
+    }
+    .maininfo{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        max-width: 780px;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 800;
+        width: 250px;
+        margin-right: 2rem;
+    }
+    .infotext{
+        font-size: 0.9rem;
+        color: var(--darkgravishblue);
+        line-height: 1.5rem;
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+    .readmore{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: var(--softred);
+        padding: 0.8rem 2rem;
+        width: 10rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 2rem;
+    }
+    .bgnew{
+        display: none;
+    }
+    
+    .subinfo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .subinfo img{
+        max-width: 100px;
+        margin-right: 1.3rem;
+    }
+    .pic{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    .subinfo h2{
+        color: var(--gravishblue);
+    }
+    .subinfo h3, h2{
+        margin-bottom: 0.7rem;
+    }
+    .subinfo p{
+        color: var(--gravishblue);
+        font-size: 0.9rem;
+        max-width: 200px;
+    }
+
 }
