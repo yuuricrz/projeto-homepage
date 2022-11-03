@@ -249,9 +249,91 @@
         margin: 2rem 0;
         opacity: 0.3;
     }
-}
-/* ---------- MOBILE 950px CONFIG ---------- */
 
-@media (min-width:1440px) {
-   
+    /* ---------- "footer" pics ---------- */
+
+    .subinfo{
+        font-size: 0.8rem;
+        color: var(--darkgravishblue);
+        font-weight: 400;
+        
+    }
+    .subinfo img{
+        width: 25%;
+        margin-right: 1rem;
+    }
+    .pic{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .number{
+        color: var(--gravishblue);
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+    }
+    .subinfo h2{
+        font-size: 1rem;
+        font-weight: 800;
+        color: var(--darkblue);
+        margin-bottom: 0.5rem;
+    }
 }
+
+/* ------------ INFO IMG ------------ */ 
+/* ---------- MOBILE 650px CONFIG ---------- */
+
+@media (min-width:650px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem;
+    }
+    .menutext{
+        display: flex;
+    }
+    header{
+        display: flex;
+        align-items: center;
+    }
+    .menutext a{
+        margin-bottom: 1.5rem;
+        text-decoration: none;
+        margin-left: 1rem;
+        color: var(--darkgravishblue);
+    }
+    .menu{
+        display: none;
+    }
+    .subinfo img{
+        max-width: 40%;
+        margin-right: 1rem;
+    }
+    .subinfo{
+        display: flex;
+        font-size: 0.9rem;
+        color: var(--darkgravishblue);
+        font-weight: 400; 
+    }
+    .pic{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .number{
+        color: var(--gravishblue);
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+    }
+    .subinfo h2{
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--darkblue);
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
