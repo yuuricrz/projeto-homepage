@@ -164,19 +164,31 @@
         display: none;
     }
     .subinfo img{
-        max-width: 40%;
-        margin-right: 1rem;
+        
+        max-width: 75px;
+        width: 100%;
+        margin-right: 0.8rem;
     }
     .subinfo{
+        max-width: 800px;
+        margin: auto;
         display: flex;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         color: var(--darkgravishblue);
         font-weight: 400; 
     }
-    .pic{
+    .pic, .textpic{
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
+    }
+    .textpic{
+        margin-right: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
     .number{
         color: var(--gravishblue);
@@ -198,13 +210,41 @@
     
 
 /* ---------- MAIN TEXT + BUTTON ---------- */
-
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    header{
+        max-width: 820px;
+        width: 100%;
+    }
+    .imgmob{
+        width: 600px;
+        margin-right: 1rem;
+    }
+    .aligndsk{
+        display: flex;
+    }
+    .maininfo{
+        display: flex;
+        justify-content: center;
+        max-width: 480px;
+    }
+    .alignmainpic{
+        display: flex;
+        flex-direction: column;
+    }
     .maininfo h1{
-        width: 35%;
-        line-height: 2.3rem;
+        margin-right: 1.2rem;
+        max-width: 250px;
+        font-size: 3rem;
+        line-height: 4rem;
     }
     .infotext{
-        width: 35%;
+        font-size: 1rem;
+        max-width: 240px;
         line-height: 1.3rem;
     }
     .readmore{
@@ -223,8 +263,9 @@
 /* ---------- INFO NEW ---------- */
     .bgnew{
         background-color: var(--darkblue);
+        max-height: 480px;
         max-width: 320px;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
     }
     .infonew{
         padding: 0.5rem 0.8rem;
@@ -253,13 +294,15 @@
     /* ---------- "footer" pics ---------- */
 
     .subinfo{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: var(--darkgravishblue);
         font-weight: 400;
+        max-width: 900px;
+        margin: auto;
         
     }
     .subinfo img{
-        width: 25%;
+        width: 95px;
         margin-right: 1rem;
     }
     .pic{
@@ -269,71 +312,16 @@
     }
     .number{
         color: var(--gravishblue);
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 800;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
     }
     .subinfo h2{
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 800;
         color: var(--darkblue);
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
     }
 }
 
 /* ------------ INFO IMG ------------ */ 
-/* ---------- MOBILE 650px CONFIG ---------- */
-
-@media (min-width:650px) {
-    body{
-        display: flex;
-        flex-direction: column;
-        margin: 5rem;
-    }
-    .menutext{
-        display: flex;
-    }
-    header{
-        display: flex;
-        align-items: center;
-    }
-    .menutext a{
-        margin-bottom: 1.5rem;
-        text-decoration: none;
-        margin-left: 1rem;
-        color: var(--darkgravishblue);
-    }
-    .menu{
-        display: none;
-    }
-    .subinfo img{
-        max-width: 40%;
-        margin-right: 1rem;
-    }
-    .subinfo{
-        display: flex;
-        font-size: 0.9rem;
-        color: var(--darkgravishblue);
-        font-weight: 400; 
-    }
-    .pic{
-        display: flex;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
-    .number{
-        color: var(--gravishblue);
-        font-size: 2rem;
-        font-weight: 800;
-        margin-bottom: 0.5rem;
-    }
-    .subinfo h2{
-        font-size: 1.3rem;
-        font-weight: 800;
-        color: var(--darkblue);
-        margin-bottom: 0.5rem;
-    }
-}
-
-
-
